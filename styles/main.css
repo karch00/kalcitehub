@@ -58,9 +58,10 @@ main {
     position: relative;
 
     display: grid;
-    grid-template-columns: 110px 5fr 4fr;
+    grid-template-columns: 110px 7fr 3fr;
     column-gap: 2rem;
     row-gap: 1.5rem;
+
     margin: 0;
     padding: 0;
 
@@ -107,18 +108,6 @@ main {
 }
 
 /* =======================================
-   Section header row
-   sits alone in column 2, no paired ghost
-   ====================================== */
-.section-header-row {
-    grid-column: 2;
-    padding: 0 36px;
-}
-.section-header-row:first-of-type {
-    padding-top: 60px;
-}
-
-/* =======================================
    Card stack
    one .cards per section, paired with the
    .ghost that follows it in the HTML
@@ -159,6 +148,13 @@ main {
 /* =======================================
    Section Headers
    ====================================== */
+.section-header-row {
+    grid-column: 2;
+    padding: 0 36px;
+}
+.section-header-row:first-of-type {
+    padding-top: 60px;
+}
 .section-header {
     display: flex;
     align-items: center;
