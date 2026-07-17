@@ -1,0 +1,10 @@
+@import "main.css";
+
+* {
+    overflow: hidden;
+}
+
+.pill {
+    font-size: 3rem;
+    padding: 20px 15px;
+}
